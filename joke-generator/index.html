@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-card">
+            <h1>😂 Joke Generator</h1>
+            <p class="subtitle">Get a random joke instantly!</p>
+            
+            <div class="joke-display">
+                <p class="joke-text" id="jokeText">Click the button to get a joke!</p>
+                <p class="joke-type" id="jokeType">Joke Type: Loading...</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" id="generateBtn">Generate Joke</button>
+                <button class="btn btn-secondary" id="copyBtn">Copy Joke</button>
+            </div>
+
+            <div class="joke-counter">
+                <p>Jokes Generated: <span id="counter">0</span></p>
+            </div>
+
+            <div class="filter-section">
+                <label for="categorySelect">Select Category:</label>
+                <select id="categorySelect">
+                    <option value="any">Any Type</option>
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock Knock</option>
+                </select>
+            </div>
+
+            <div class="loading" id="loadingSpinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading joke...</p>
+            </div>
+
+            <div class="history-section">
+                <h3>Joke History</h3>
+                <ul class="joke-history" id="jokeHistory">
+                    <li>No jokes generated yet</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
