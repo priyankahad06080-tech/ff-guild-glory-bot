@@ -1,0 +1,25 @@
+{
+  "name": "ff-guild-glory-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for Final Fantasy guild management and glory tracking",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "final-fantasy",
+    "guild"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
