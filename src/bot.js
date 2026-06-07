@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to Database
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost:27017/ff-guild-bot', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
