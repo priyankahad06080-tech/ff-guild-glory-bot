@@ -1,13 +1,16 @@
 # FF Guild Glory Bot
 
-A Discord bot for Final Fantasy guild management and glory tracking.
+A powerful bot designed to level up your Free Fire guild by automating guild management, tracking player progress, and boosting guild glory.
 
 ## Features
-- Guild member management
-- Glory point tracking
-- Leaderboards
-- Guild events coordination
-- Member statistics
+
+- **Guild Level Up System**: Automated guild experience tracking and leveling
+- **Player Progress Tracking**: Monitor individual player contributions
+- **Guild Statistics**: Real-time guild performance metrics
+- **Automated Tasks**: Schedule guild activities and challenges
+- **Leaderboards**: Track top performers and contributors
+- **Daily Rewards**: Distribute glory points and bonuses
+- **Member Management**: Organize and manage guild members
 
 ## Installation
 
@@ -17,10 +20,13 @@ npm install
 
 ## Configuration
 
-Create a `.env` file with your Discord bot token:
+Create a `.env` file with your Free Fire API credentials:
 
 ```
-DISCORD_TOKEN=your_token_here
+FREEFIRE_API_KEY=your_api_key
+GUILD_ID=your_guild_id
+BOT_TOKEN=your_bot_token
+DATABASE_URL=mongodb://localhost:27017/ff-guild-bot
 ```
 
 ## Usage
@@ -28,13 +34,6 @@ DISCORD_TOKEN=your_token_here
 ```bash
 npm start
 ```
-
-## Commands
-
-- `/glory add @user points` - Add glory points to a member
-- `/glory view @user` - View a member's glory points
-- `/leaderboard` - Display guild glory leaderboard
-- `/stats @user` - View detailed member statistics
 
 ## License
 

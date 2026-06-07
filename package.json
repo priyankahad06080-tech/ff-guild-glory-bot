@@ -1,25 +1,30 @@
 {
   "name": "ff-guild-glory-bot",
   "version": "1.0.0",
-  "description": "A Discord bot for Final Fantasy guild management and glory tracking",
-  "main": "src/index.js",
+  "description": "Free Fire Guild Glory Bot - Level up your guild",
+  "main": "src/bot.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js",
+    "test": "jest"
   },
   "keywords": [
-    "discord",
+    "free-fire",
+    "guild",
     "bot",
-    "final-fantasy",
-    "guild"
+    "automation"
   ],
-  "author": "",
+  "author": "priyankahad06080-tech",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.0.0",
-    "dotenv": "^16.0.0"
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "mongoose": "^7.0.0",
+    "discord.js": "^14.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.0"
+    "nodemon": "^2.0.0",
+    "jest": "^29.0.0"
   }
 }
